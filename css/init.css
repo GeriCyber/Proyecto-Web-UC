@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+html,
+body 
+{
+  font-family: 'Quicksand' !important;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body 
+{
+  padding-top: 3.5rem;
+}
+.jumbotron
+{
+	background-image: url("../img/background.png") !important;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	border-radius: 0px !important;
+}
+.page-item.active .page-link
+{
+	background-color: #34261c;
+    border-color: #34261c;
+}
+.bg-property
+{
+	background-color: #34261c !important;
+}
+/*Loader*/
+.spinner
+{
+    width: 80px;
+    height: 80px;
+    
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #4dbd74;
+    border-radius: 100%;
+    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin 
+{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay
+{
+  height:100%;
+  width:100%;
+  background:#34261c;
+  position:fixed;
+  left:0;
+  top:0;
+ }
